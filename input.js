@@ -1,4 +1,4 @@
-// input.js
+const { IP, PORT } = require("./constants");
 
 let connection;
 
