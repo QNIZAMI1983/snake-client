@@ -28,6 +28,9 @@ const handleUserInput = function (key) {
     connection.write("Move: down");
   } else if (key === 'd') {
     connection.write("Move: right");
+  } else {
+    // Send the user input as a message to the server
+    connection.write(key);
   }
 };
 
