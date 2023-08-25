@@ -17,7 +17,10 @@ const connect = function () {
 
   // Event listener for "connect" event
   conn.on("connect", () => {
-    console.log("Connected to the server.");
+    console.log("Successfully connected to game server.");
+
+    // Send the player's name to the server
+    conn.write("Name: QAN");
   });
 
   // Event listener for "end" event
@@ -30,3 +33,4 @@ const connect = function () {
 
 // Export the connect function using ES6 shorthand syntax
 module.exports = { connect };
+
